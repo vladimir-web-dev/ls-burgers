@@ -1,0 +1,27 @@
+.container {
+	width: 98%;
+	max-width: 940px;
+	height: 100%;
+	margin: 0 auto;
+
+	display: flex;
+    flex-direction: column;
+
+
+	@include tablets {
+		max-width: 712px;
+	}
+
+	@include phones {
+		max-width: 440px;
+	}
+
+	&--centered {
+		align-items: center;
+	}
+
+	&--j-centered {
+		justify-content: center;
+	}
+}
+

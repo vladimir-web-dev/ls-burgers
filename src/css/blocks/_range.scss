@@ -1,0 +1,34 @@
+@mixin range-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $grey;
+    cursor: pointer;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+}
+
+.range__input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: $grey;
+    outline: none; 
+
+    &::-webkit-slider-thumb {
+        @include range-btn;
+        -webkit-appearance: none;
+        appearance: none;
+       
+    } 
+
+    
+    &::-moz-range-thumb {
+        @include range-btn;
+    }
+}
+
+   

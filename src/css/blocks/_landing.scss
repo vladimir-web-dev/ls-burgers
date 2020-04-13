@@ -1,0 +1,81 @@
+.landing {
+    @include bg-image('../img/decoration/landing-bg.png');
+}
+
+.landing__container {
+    flex: .85;
+
+    justify-content: center;
+}
+
+.landing__content {
+    display: flex;
+    
+    @include tablets {
+        flex-direction: column;
+        padding: 0 18%;
+    }
+    
+    @include phones {
+		padding: 5%;
+	}
+}
+
+.landing__content-left,
+.landing__content-right {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+	}
+}
+
+.landing__content-left {
+    padding-right: 1%;
+
+    @include tablets {
+        margin-bottom: rem(30px);
+	}
+}
+
+.landing__content-right {
+    padding-top: 15%;
+    
+    @include tablets {
+        padding-top: 0;
+        text-align: center;
+	}
+}
+
+.landing__heading {
+    margin-bottom: rem(15px);
+
+    @include phones {
+        font-size: rem(68px);
+    }
+}
+
+.landing__text {
+    @include lifehack();
+
+    color: $white;
+    font-size: rem(54px);
+    line-height: 0.92;
+
+    @include phones {
+		font-size: rem(60px);
+	}
+}
+
+.landing__img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.landing__arrow {
+    position: absolute;
+    left: 50%;
+    bottom: rem(40px); 
+    transform: translateX(-50%); 
+}

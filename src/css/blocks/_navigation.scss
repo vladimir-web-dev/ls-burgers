@@ -1,0 +1,34 @@
+.navigation {
+    @include tablets {
+        display: none;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navigation__item {
+    @include ubuntu(medium);
+
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $white;  
+    font-size: rem(13px);    
+    line-height: 1;
+
+    // &:not(:last-child) {        
+    //     &::after {
+    //         content: "";
+    //         display: inline-block;
+    //         width: 4px;
+    //         height: 4px;
+    //         border-radius: 50%;
+    //         background-color: currentColor;  
+    //         vertical-align: middle;  
+    //         margin: 0 rem(6px);                   
+    //     }
+    // }
+}

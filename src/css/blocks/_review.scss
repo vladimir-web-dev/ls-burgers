@@ -1,0 +1,60 @@
+.review {
+    filter: grayscale(1);
+    @include bg-cover;
+
+    &:hover {
+        .review__content {
+            display: flex;
+        }
+    }
+}
+
+.review__content {
+    display: none;
+    height: 100%;
+    padding: 20% 10%;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $white;
+    background-color: rgba($black, .8);
+
+    @include tablets {
+        padding: 10% 10%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.review__heading {
+    text-transform: uppercase;
+    font-size: rem(20px);
+    line-height: 1;
+    margin-bottom: rem(30px);
+
+    @include gagalin;
+}
+
+.review__text {
+    margin-bottom: rem(30px);
+
+    @include phones {
+        display: none;
+    }
+}
+
+.review__btn { 
+    background-color: $black; 
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.review__btn--small {
+    display: none;
+
+    @include tablets {
+        display: inline-block;
+    }
+}

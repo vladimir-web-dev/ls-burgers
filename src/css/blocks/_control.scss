@@ -1,0 +1,28 @@
+.control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.control__heading {
+    margin-bottom: 10px;
+}
+
+.control__input {
+    width: 100%;
+    padding: rem(10px) rem(22px);
+    background-color: $white;
+    color: $black;
+    border: 2px solid transparent;
+    border-radius: rem(5px);
+
+    &:focus {
+        border-color: $yellow;
+    }
+
+    &--textarea {
+        height: rem(140px);
+        resize: none;
+    }
+}
+

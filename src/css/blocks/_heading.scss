@@ -1,0 +1,25 @@
+.heading {
+  @include gagalin();
+
+  font-size: rem(72px);
+  line-height: 1.18;
+  color: $yellow;
+  margin-bottom: rem(40px);
+
+  @include tablets {
+    margin-bottom: rem(65px);
+  }
+
+  @include phones {
+    margin-bottom: rem(40px);
+    font-size: rem(62px);
+  }
+
+  &--black {
+    color: $black;
+  }
+
+  &--white {
+    color: $white;
+  }
+}

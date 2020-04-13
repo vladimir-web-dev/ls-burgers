@@ -1,0 +1,34 @@
+.header {
+    padding: rem(12px) 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__buttons {
+    flex: 1;
+    padding-left: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header__navigation {
+    flex: 1;
+    margin-right: 3%;
+}
+
+.header__hamburger-menu {
+    display: none;
+    width: rem(25px);
+    height: rem(23px);
+
+    @include tablets {
+        display: block;
+    }
+}
+
+.header__btn {
+    @include tablets {
+        margin-right: rem(30px);
+    }
+}

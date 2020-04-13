@@ -1,0 +1,49 @@
+.bit-contol {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bit-contol__input {
+    opacity: 0;
+    position: absolute;
+    left: -5000px;
+}
+
+.bit-contol__input:checked {
+    & + .bit-contol__field::after {
+        opacity: 1;
+    }
+}
+
+.bit-contol__field {
+    position: relative;
+    height: rem(15px);
+    width: rem(15px);
+    background-color: $white;
+    margin-right: rem(10px);
+
+    &::after {
+        content: "";
+        display: block;
+        width: rem(8px);
+        height: rem(8px);
+        background-color: $orange;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+
+    &--checkbox {
+        border-radius: 50%;
+
+        &::after {
+            border-radius: 50%;
+        }
+    }
+       
+}

@@ -1,0 +1,7 @@
+.examples {
+    background: linear-gradient(to bottom, $yellow, $orange, $yellow);
+
+    @include phones {
+		min-height:750px;
+	}
+}

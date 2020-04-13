@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    color: $white;
+
+    @include tablets{
+        flex-direction: column;
+    }
+}
+
+.form__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+
+    &:not(:last-child) {
+        margin-right: rem(20px);
+    }
+
+    @include tablets{       
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: rem(20px);
+        }
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(25px);
+
+    &--centered {
+        @include phones{       
+            justify-content: center;
+        }
+    }
+}
+
+.form__control {
+    flex: 1 1 0;
+
+    &:not(:last-child) {
+        margin-right: rem(20px);
+    }
+
+    &--chk {
+        flex: 0 1 auto;
+    }
+}
+
+.from__button {
+    margin-right: 10px;
+}

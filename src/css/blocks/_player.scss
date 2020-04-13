@@ -1,0 +1,52 @@
+.player {
+    display:flex;
+    flex-direction: column;
+}
+
+.player__screen {
+    position: relative;
+    flex: 1;
+}
+
+.player__toolbar {
+    display: flex;
+    align-items: center;
+    padding: rem(10px) rem(25px);
+    background-color: $black;;
+}
+
+.player__screen-play {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: rem(120px);
+    width: rem(85px);
+    opacity: .8;
+}
+
+.player__svg {
+    width: 100%;
+    height: 100%;
+
+    &--white {
+        fill: $white;
+    }
+
+    &--grey {
+        fill: $grey;
+    }
+}
+
+.player__toolbar-icon {
+    display: block;
+    height: rem(25px);
+    width: rem(20px);
+    margin-right: rem(20px);
+}
+
+.player__timeline {
+    width: 100%;
+    margin-right: rem(20px);
+}
